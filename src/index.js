@@ -4,8 +4,26 @@ import { saveAs } from "file-saver";
 const worker = new ZipWorker();
 
 worker.addEventListener("message", event => {
-  if (event.data.result) {
-    saveAs(event.data.result, "my.zip");
+  const message = event.data;
+  switch (message.type) {
+    case "start": {
+      document.querySelector("#progress").style.display = "block";
+      break;
+    }
+    case "progress": {
+      document.querySelector("#progress-value").innerHTML = Math.floor(message.data.value * 10000) / 100;
+      break;
+    }
+    case "end-progress": {
+      document.querySelector("#progress").style.display = "none";
+      break;
+    }
+    case "result": {
+      if (message.data.result) {
+        saveAs(message.data.result, "my.zip");
+      }
+      break;
+    }
   }
 });
 

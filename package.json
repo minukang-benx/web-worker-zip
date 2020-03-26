@@ -19,6 +19,7 @@
     "worker-loader": "^2.0.0"
   },
   "dependencies": {
+    "fetch-readablestream": "^0.2.0",
     "file-saver": "^2.0.2",
     "jszip": "^3.2.2",
     "whatwg-fetch": "^3.0.0"
