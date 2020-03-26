@@ -1,3 +1,4 @@
+import "whatwg-fetch";
 import JSZip from "jszip";
 
 const ctx = self;
