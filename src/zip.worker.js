@@ -1,7 +1,9 @@
 import "whatwg-fetch";
-import "text-encoding";
+import TextEncoder from "text-encoding";
 import JSZip from "jszip";
 import fetchReadableStream from "fetch-readablestream";
+
+global.TextEncoder = TextEncoder;
 
 const ctx = self;
 
