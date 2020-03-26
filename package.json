@@ -23,6 +23,7 @@
     "file-saver": "^2.0.2",
     "jszip": "^3.2.2",
     "text-encoding": "^0.7.0",
+    "web-streams-polyfill": "^2.1.0",
     "whatwg-fetch": "^3.0.0"
   }
 }

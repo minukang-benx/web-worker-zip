@@ -1,4 +1,5 @@
 import "whatwg-fetch";
+import "web-streams-polyfill";
 import TextEncoder from "text-encoding";
 import JSZip from "jszip";
 import fetchReadableStream from "fetch-readablestream";
