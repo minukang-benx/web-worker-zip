@@ -1,3 +1,4 @@
+import "whatwg-fetch";
 import ZipWorker from "./zip.worker";
 import { saveAs } from "file-saver";
 
