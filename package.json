@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && mkdir dist && webpack"
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -19,11 +19,8 @@
     "worker-loader": "^2.0.0"
   },
   "dependencies": {
-    "fetch-readablestream": "^0.2.0",
+    "axios": "^0.19.2",
     "file-saver": "^2.0.2",
-    "jszip": "^3.2.2",
-    "text-encoding": "^0.7.0",
-    "web-streams-polyfill": "^2.1.0",
-    "whatwg-fetch": "^3.0.0"
+    "jszip": "^3.2.2"
   }
 }
