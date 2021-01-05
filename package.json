@@ -19,7 +19,7 @@
     "worker-loader": "^2.0.0"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "file-saver": "^2.0.2",
     "jszip": "^3.2.2"
   }
